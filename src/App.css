@@ -1,42 +1,93 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+* {
+    font-family: "Poppins";
+    color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navbarBlur {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }
 
-.card {
-  padding: 2em;
+.progress-bar {
+    background-color: #ff3366;
+    /* overflow: hidden;
+    position: fixed;
+    transition: width 2s; */
 }
 
-.read-the-docs {
-  color: #888;
+.fs-6,
+.fs-5 {
+    font-size: 1rem !important;
+    font-family: "Poppins" !important;
+    font-weight: 200 !important;
+}
+
+.active {
+    color: #ff6633 !important;
+}
+
+.nav-link {
+    font-size: smaller;
+    color: white;
+}
+
+.nav-link:hover {
+    cursor: pointer !important;
+    text-decoration: underline 3px solid #ff6633 !important;
+}
+
+
+/* App.css */
+
+.proContainer{
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    padding:0.6rem;
+    border-radius: 2rem;
+    height: 30%;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    backdrop-filter: contrast(50%);
+}
+/* Progress container to place the vertical progress bar */
+.progress-container {
+    height: 100%;
+    width: 2px;
+    background-color: #f3f3f3;
+    border-radius: 2rem;
+}
+
+/* Progress bar inside the container */
+.progress {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #ddd;
+    /* Light color for the background track */
+    /* filter: contrast(100%); */
+}
+
+/* Progress bar fill */
+.progress-bar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    /* transition: height 0.3s ease; */
+    /* Smooth transition */
+    border-radius: 5px;
+    /* filter: contrast(100%); */
 }
