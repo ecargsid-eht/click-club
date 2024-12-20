@@ -15,17 +15,26 @@
 }
 
 .slide1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://clickclub.nitrr.ac.in/media/w1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/slide1.jpg);
 }
 .slide2{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/slide2.jpg);
 }
 .slide3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://clickclub.nitrr.ac.in/media/NITISH%20AGARWAL%20(12).jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/slide3.jpg);
 }
 .slide4{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://clickclub.nitrr.ac.in/media/IMG_20200526_124001383-01-01%20-%20nirdesh%20sharma.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/slide4.jpg);
 }
 .slide5{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://clickclub.nitrr.ac.in/media/Palash%205.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/slide5.jpg);
+}
+.slide6{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/slide6.webp);
+}
+
+.fs-6,
+.fs-5 {
+    font-size: 1rem !important;
+    font-family: "Poppins" !important;
 }

@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
 }
 
 .progress-bar {
-    background-color: #ff3366;
+    background-color: #ff6633;
     /* overflow: hidden;
     position: fixed;
     transition: width 2s; */
@@ -31,7 +31,6 @@ body::-webkit-scrollbar {
 .fs-5 {
     font-size: 1rem !important;
     font-family: "Poppins" !important;
-    font-weight: 200 !important;
 }
 
 .active {
@@ -90,4 +89,40 @@ body::-webkit-scrollbar {
     /* Smooth transition */
     border-radius: 5px;
     /* filter: contrast(100%); */
+}
+
+.primaryOutline {
+    background: rgba(0, 123, 255, 0.1);
+}
+
+.dangerOutline {
+    background: rgba(220, 53, 69, 0.1);
+}
+.muiPurpleOutline{
+    color: #3c0080;
+    background: rgba(225, 217, 255, 0.3);
+}
+
+.primaryOutline:hover {
+    background: rgba(0, 123, 255, 0.2);
+}
+
+.dangerOutline:hover {
+    background: rgba(220, 53, 69, 0.2);
+}
+.muiPurpleOutline:hover {
+    color: #3c0080 !important;
+    background: rgba(225, 217, 255, 0.6);
+}
+
+.primaryOutline:active {
+    background: rgba(0, 123, 255, 0.3) !important;
+}
+
+.dangerOutline:active {
+    background: rgba(220, 53, 69, 0.3) !important;
+}
+.muiPurpleOutline:active {
+    color: #3c0080 !important;
+    background: rgba(225, 217, 255, 1) !important;
 }

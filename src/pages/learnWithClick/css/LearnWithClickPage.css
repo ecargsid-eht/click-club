@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px) {
+    .carousel,.carousel-inner{
+        height: 80vh;
+    }
+}
+
+.carousel-item>div>ul li::before{
+    content: '✓';
+}
+
+.learnWithClickHeading::after{
+    content: "";
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+    height: 5px;
+    background: #FF6633;}

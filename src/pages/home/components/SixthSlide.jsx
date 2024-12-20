@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 function SixthSlide() {
     return (
-        <div className="slide  d-flex slide5 pt-5 min-vh-100 pt-lg-0">
+        <div className="slide  d-flex slide6 pt-5 min-vh-100 pt-lg-0">
             <div className="d-flex flex-column justify-content-center align-items-center text-center col-lg-6 pt-5 pt-lg-0">
                 <div>
                     <motion.h1 initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1 }} className='z-1 d-none d-lg-block fw-normal h1 mb-1 color-dark' style={{ fontSize: '64px' }}>Click Club, the photography club of NIT Raipur. I dream. I frame. I live. I click.</motion.h1>

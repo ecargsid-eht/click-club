@@ -10,8 +10,8 @@ function ThirdSlide() {
         <div className="slide slide3 pt-5 min-vh-100 pt-lg-0">
             <div className="d-flex flex-column justify-content-center align-items-center text-center col-lg-6 pt-5 pt-lg-0">
                 <div>
-                    <motion.p initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className='z-1 fw-normal fs-1 mb-1 color-dark'>What we Do ?</motion.p>
-                    <motion.p initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className='z-1 fs-4 text-center mx-2' style={{ fontFamily: "Poppins", fontWeight: "200" }}>
+                    <motion.p initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1 }} className='z-1 fw-normal fs-1 mb-1 color-dark'>What we Do ?</motion.p>
+                    <motion.p initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1 }} className='z-1 fs-4 text-center mx-2' style={{ fontFamily: "Poppins", fontWeight: "200" }}>
                         Click Club desires to make your college years memorable. We document all those beautiful moments you shared at the campus, by covering all the activities and happenings of the college. We organise workshops, photo exhibitions and aim to promote the art of photography.
                     </motion.p>
                 </div>

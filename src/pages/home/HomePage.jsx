@@ -1,10 +1,5 @@
 import { lazy, Suspense } from "react"
 import './css/Homepage.css'
-// import SecondSlide from "./components/SecondSlide"
-// import ThirdSlide from "./components/ThirdSlide"
-// import FourthSlide from "./components/FourthSlide"
-// import FifthSlide from "./components/FifthSlide"
-// import SixthSlide from "./components/SixthSlide"
 const FirstSlide = lazy(() => import('./components/FirstSlide'))
 const SecondSlide = lazy(() => import('./components/SecondSlide'))
 const ThirdSlide = lazy(() => import('./components/ThirdSlide'))

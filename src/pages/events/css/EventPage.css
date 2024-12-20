@@ -1,0 +1,4 @@
+.eventCard:hover{
+    transition-duration: 0.3s;
+    box-shadow: 5px 5px 10px #ddd !important;
+}

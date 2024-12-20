@@ -2,10 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import UpScroll from "../assets/scrollUp.svg?react";
 import DownScroll from "../assets/scrollDown.svg?react";
 import {motion} from 'motion/react';
+import { useLocation } from "react-router";
 function ProgressScroll() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const scrollIntervalRef = useRef(null);
+  const location = useLocation()
   const scrollSpeed = 2;
+
   const handleScroll = () => {
     const scrollTop = window.scrollY;
     const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -13,23 +16,25 @@ function ProgressScroll() {
     setScrollProgress(scrollPercentage);
   };
 
+  function resetScrollProgress() {
+    setScrollProgress(0);
+  }
+
   const scroll = (direction) => {
     window.scrollBy(0, direction * scrollSpeed);
     scrollIntervalRef.current = requestAnimationFrame(() => scroll(direction));
   };
 
-  // Start scroll animation (up or down)
   const startScroll = (direction) => {
-    if (scrollIntervalRef.current) return; // Prevent multiple scrolls running simultaneously
+    if (scrollIntervalRef.current) return;
     scroll(direction);
   };
-  // Stop scrolling
+
   const stopScroll = () => {
     cancelAnimationFrame(scrollIntervalRef.current);
     scrollIntervalRef.current = null;
   };
 
-  // Add scroll event listener on mount and remove on unmount
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -37,9 +42,12 @@ function ProgressScroll() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  useEffect(() => {
+    resetScrollProgress();
+  },[location.pathname])
   return (
     <div
-      className="d-none d-lg-flex justify-content-center flex-column align-items-center gap-2 proContainer shadow-lg"
+      className={`d-none d-lg-flex justify-content-center flex-column align-items-center gap-2 proContainer shadow-lg`}
       style={{ zIndex: 10 }}
     >
       <motion.button
