@@ -5,6 +5,7 @@ const news = ['news1.jpg', 'news2.jpg', 'news3.png', 'news4.jpg', 'news5.jpg', '
 const vogue = ['vogue1.jpg', 'vogue5.JPG', 'vogue15.jpg', 'vogue2.JPG', 'vogue13.jpg', 'yourlens1.PNG', 'vogue3.PNG', 'vogue4.JPG', 'vogue6.jpg', 'vogue7.jpg', 'vogue8.png', 'vogue9.jpg', 'vogue10.png', 'vogue11.png', 'vogue12.png', 'vogue14.png'];
 
 function AchievementsPage() {
+    const PUBLIC_URL = window.location.origin
     const [chunkSize, setChunkSize] = useState(3); // Default chunk size for larger screens
 
     useEffect(() => {
@@ -48,7 +49,7 @@ function AchievementsPage() {
                                     {slideImages.map((vImage, key) => (
                                         <div className="col-12 col-md-4" key={key}>
                                             <img
-                                                src={`/assets/achievements/${vImage}`}
+                                                src={`/publicAssets/achievements/${vImage}`}
                                                 className="d-block w-100 rounded-3"
                                                 alt={`Vogue Image ${slideIndex * 3 + key + 1}`}
                                                 // style={{ maxHeight: '300px', objectFit: 'cover' }}
