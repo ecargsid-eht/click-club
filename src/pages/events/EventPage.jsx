@@ -2,20 +2,24 @@ import { events } from "../../dataObj"
 import './css/EventPage.css'
 import Venue from '../../assets/venue.svg?react'
 import DateTime from '../../assets/dateTime.svg?react'
+import { useState } from "react"
+import EventDetails from "./EventDetails"
 function EventPage() {
+    const [selectedEvent, setSelectedEvent] = useState(null);
+
     return (
         <div className="container mb-2">
             <div className="text-center">
                 <p className="text-black mt-4 fw-bold display-6">Upcoming Events</p>
                 <p className="text-secondary small fw-light">
-                    Come and join us in the events of Click Club to enrich your experience with the photographs that withold the power to change the world.
+                    Come and join us in the events of <span style={{ color: "#ff6633" }}>Click Club</span> to enrich your experience with the photographs that withold the power to change the world.
                 </p>
             </div>
             <div className="mt-5 row">
                 {
-                    events.map((e) => {
+                    events.sort((a, b) => new Date(b.startDate) - new Date(a.startDate)).map((e) => {
                         if(e.startDate > Date.now()){
-
+                            
                             return (
                                 <div key={e.id} className="col-lg-3 col-md-4">
                                     <div className="card position-relative eventCard rounded-3 shadow-sm" style={{ borderColor: '#eee' }}>
@@ -23,7 +27,7 @@ function EventPage() {
                                         <div className="card-body">
                                             <p className="text-black fw-bold fs-4 mb-2">{e.title}</p>
                                             <p className="small fw-light text-secondary mb-2">{e.brief}</p>
-                                            <button className="btn muiPurpleOutline border-0 rounded-3 btn-sm float-end stretched-link fw-semibold">
+                                            <button data-bs-toggle="modal" data-bs-target='#eventModal' onClick={() => setSelectedEvent(e)} className="btn muiPurpleOutline border-0 rounded-3 btn-sm float-end stretched-link fw-semibold">
                                                 Check Details
                                             </button>
                                         </div>
@@ -57,21 +61,22 @@ function EventPage() {
             <div className="text-center">
                 <p className="text-black mt-5 pt-4 fw-bold display-6">Past Events</p>
                 <p className="text-secondary small fw-light">
-                    Let us take a tour down the memory lane to experience some coolest events conducted by our own Click Club.
+                    Let us take a tour down the memory lane to experience some coolest events conducted by our own <span style={{color:"#ff6633"}}>Click Club</span>.
                 </p>
             </div>
             <div className="mt-5 row">
                 {
-                    events.map((e) => {
+                    events.sort((a, b) => new Date(b.startDate) - new Date(a.startDate)).map((e) => {
+
                         if(e.startDate < Date.now()){
                             return (
                                 <div key={e.id} className="col-lg-3 col-md-4">
                                     <div className="card position-relative eventCard rounded-3 shadow-sm" style={{ borderColor: '#eee' }}>
                                         <img className="card-img-top rounded-top-3" src={e.image} alt="Event Image" />
                                         <div className="card-body">
-                                            <p className="text-black fw-bold fs-4 mb-2">{e.title}</p>
+                                            <p className="text-black fw-bold fs-4 mb-2 text-truncate">{e.title}</p>
                                             <p className="small fw-light text-secondary mb-2">{e.brief}</p>
-                                            <button className="btn muiPurpleOutline border-0 rounded-3 btn-sm float-end stretched-link fw-semibold">
+                                            <button data-bs-toggle="modal" data-bs-target='#eventModal' onClick={() => setSelectedEvent(e)} className="btn muiPurpleOutline border-0 rounded-3 btn-sm float-end stretched-link fw-semibold">
                                                 Check Details
                                             </button>
                                         </div>
@@ -101,6 +106,9 @@ function EventPage() {
                     )
                 }
             </div>
+
+
+            <EventDetails event={selectedEvent} />
         </div>
     )
 }

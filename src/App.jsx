@@ -3,7 +3,8 @@ import endPoints from './endPoints'
 import './App.css'
 import { lazy } from 'react'
 import EventPage from './pages/events/EventPage'
-import LearnWithClickPage from './pages/learnWithClick/LearnWithClickPage'
+import AchievementsPage from './pages/achievements/AchievementsPage'
+const LearnWithClickPage = lazy(() => import('./pages/learnWithClick/LearnWithClickPage'));
 const CampusPage = lazy(() => import('./pages/campus/CampusPage'))
 const ProgressScroll = lazy(() => import('./components/ProgressScroll'))
 const Navbar = lazy(() => import('./components/Navbar'))
@@ -21,6 +22,7 @@ function App() {
         <Route path={endPoints.about} element={<AboutPage/>} />
         <Route path={endPoints.events} element={<EventPage/>} />
         <Route path={endPoints.learnWithClick} element={<LearnWithClickPage/>} />
+        <Route path={endPoints.achievements} element={<AchievementsPage/>} />
       </Routes>
     </Router>
   )

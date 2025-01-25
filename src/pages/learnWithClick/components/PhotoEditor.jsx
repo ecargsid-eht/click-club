@@ -78,6 +78,7 @@ function PhotoEditor() {
                         <div className="moreOptions mt-2">
                             <button onClick={() => handleDownload()} className="btn fw-semibold border-0 muiPurpleOutline">DOWNLOAD</button>
                             <button onClick={() => handleReset()} className="btn fw-semibold border-0 ms-1 text-danger dangerOutline">RESET</button>
+                            <button onClick={() => setSelected(null)} className="btn fw-semibold border-0 ms-1 text-danger dangerOutline">SELECT NEW</button>
                         </div>
                     </div>
                     <div className="right col-lg-3">

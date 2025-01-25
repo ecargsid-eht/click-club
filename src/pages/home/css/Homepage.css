@@ -33,6 +33,14 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/slide6.webp);
 }
 
+@media screen and (max-width: 768px) {
+    
+    .fs-4{
+        font-size: 1.2rem !important;
+        font-family: "Poppins" !important;
+    }
+}
+
 .fs-6,
 .fs-5 {
     font-size: 1rem !important;
