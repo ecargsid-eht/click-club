@@ -5,7 +5,6 @@ const news = ['news1.jpg', 'news2.jpg', 'news3.png', 'news4.jpg', 'news5.jpg', '
 const vogue = ['vogue1.jpg', 'vogue5.JPG', 'vogue15.jpg', 'vogue2.JPG', 'vogue13.jpg', 'yourlens1.PNG', 'vogue3.PNG', 'vogue4.JPG', 'vogue6.jpg', 'vogue7.jpg', 'vogue8.png', 'vogue9.jpg', 'vogue10.png', 'vogue11.png', 'vogue12.png', 'vogue14.png'];
 
 function AchievementsPage() {
-    const PUBLIC_URL = window.location.origin
     const [chunkSize, setChunkSize] = useState(3); // Default chunk size for larger screens
 
     useEffect(() => {
@@ -41,7 +40,7 @@ function AchievementsPage() {
             <div className="mt-5"></div>
             <div className="w-100">
                 <p className="text-black fs-3 fw-bold ps-1 mb-4 pb-0" style={{ borderLeft: "0.3rem solid #ff6633" }}>Featured Photographs</p>
-                <div id="featuresfeatures" className="carousel slide w-100 p-4 shadow-sm rounded-3" style={{ backgroundColor: '#e7e7e7' }} data-bs-ride="carousel">
+                <div id="features" className="carousel slide w-100 p-4 shadow-sm rounded-3" style={{ backgroundColor: '#e7e7e7' }} data-bs-ride="carousel">
                     <div className="carousel-inner">
                         {vogueSlides.map((slideImages, slideIndex) => (
                             <div className={`carousel-item ${slideIndex === 0 ? 'active' : ''}`} key={slideIndex}>
@@ -81,7 +80,7 @@ function AchievementsPage() {
                                     {slideImages.map((vImage, key) => (
                                         <div className="col-12 col-md-4" key={key}>
                                             <img
-                                                src={`/assets/achievements/${vImage}`}
+                                                src={`/publicAssets/achievements/${vImage}`}
                                                 className="d-block w-100 rounded-3"
                                                 alt={`Vogue Image ${slideIndex * 3 + key + 1}`}
                                                 // style={{ maxHeight: '300px', objectFit: 'cover' }}
@@ -113,7 +112,7 @@ function AchievementsPage() {
                                     {slideImages.map((vImage, key) => (
                                         <div className="col-12 col-md-4" key={key}>
                                             <img
-                                                src={`/assets/achievements/${vImage}`}
+                                                src={`/publicAssets/achievements/${vImage}`}
                                                 className="d-block w-100 rounded-3"
                                                 alt={`Vogue Image ${slideIndex * 3 + key + 1}`}
                                                 // style={{ maxHeight: '300px', objectFit: 'cover' }}
