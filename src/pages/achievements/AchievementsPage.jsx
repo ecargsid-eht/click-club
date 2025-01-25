@@ -48,7 +48,7 @@ function AchievementsPage() {
                                     {slideImages.map((vImage, key) => (
                                         <div className="col-12 col-md-4" key={key}>
                                             <img
-                                                src={`../../assets/achievements/${vImage}`}
+                                                src={`/assets/achievements/${vImage}`}
                                                 className="d-block w-100 rounded-3"
                                                 alt={`Vogue Image ${slideIndex * 3 + key + 1}`}
                                                 // style={{ maxHeight: '300px', objectFit: 'cover' }}
@@ -80,7 +80,7 @@ function AchievementsPage() {
                                     {slideImages.map((vImage, key) => (
                                         <div className="col-12 col-md-4" key={key}>
                                             <img
-                                                src={`../../assets/achievements/${vImage}`}
+                                                src={`/assets/achievements/${vImage}`}
                                                 className="d-block w-100 rounded-3"
                                                 alt={`Vogue Image ${slideIndex * 3 + key + 1}`}
                                                 // style={{ maxHeight: '300px', objectFit: 'cover' }}
@@ -112,7 +112,7 @@ function AchievementsPage() {
                                     {slideImages.map((vImage, key) => (
                                         <div className="col-12 col-md-4" key={key}>
                                             <img
-                                                src={`../../assets/achievements/${vImage}`}
+                                                src={`/assets/achievements/${vImage}`}
                                                 className="d-block w-100 rounded-3"
                                                 alt={`Vogue Image ${slideIndex * 3 + key + 1}`}
                                                 // style={{ maxHeight: '300px', objectFit: 'cover' }}
