@@ -40,56 +40,60 @@ function AchievementsPage() {
             <div className="mt-5"></div>
             <div className="w-100">
                 <p className="text-black fs-3 fw-bold ps-1 mb-4 pb-0" style={{ borderLeft: "0.3rem solid #ff6633" }}>Featured Photographs</p>
-                <div id="features" className="carousel slide w-100 p-4 shadow-sm rounded-3" style={{ backgroundColor: '#e7e7e7' }} data-bs-ride="carousel">
-                    <div className="carousel-inner">
-                        {vogueSlides.map((slideImages, slideIndex) => (
-                            <div className={`carousel-item ${slideIndex === 0 ? 'active' : ''}`} key={slideIndex}>
-                                <div className="row">
-                                    {slideImages.map((vImage, key) => (
-                                        <div className="col-12 col-md-4" key={key}>
-                                            <img
-                                                src={`/publicAssets/achievements/${vImage}`}
-                                                className="d-block w-100 rounded-3"
-                                                alt={`Vogue Image ${slideIndex * 3 + key + 1}`}
-                                                // style={{ maxHeight: '300px', objectFit: 'cover' }}
-                                            />
-                                        </div>
-                                    ))}
+                <div className="shadow-sm rounded-3 mb-5 p-4" style={{ backgroundColor: '#e7e7e7' }}>
+                    <div id="features" className="carousel slide w-100 " data-bs-ride="carousel">
+                        <div className="carousel-inner">
+                            {vogueSlides.map((slideImages, slideIndex) => (
+                                <div className={`carousel-item ${slideIndex === 0 ? 'active' : ''}`} key={slideIndex}>
+                                    <div className="row">
+                                        {slideImages.map((vImage, key) => (
+                                            <div className="col-12 col-md-4" key={key}>
+                                                <img
+                                                    src={`/publicAssets/achievements/${vImage}`}
+                                                    className="d-block w-100 rounded-3"
+                                                    alt={`Vogue Image ${slideIndex * 3 + key + 1}`}
+                                                    // style={{ maxHeight: '300px', objectFit: 'cover' }}
+                                                />
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
-                    <div className="d-flex rounded-pill mt-3">
-                        <button className="carousel-control-prev position-static bg-dark mx-2 rounded-circle p-2 " style={{width:'fit-content'}} type="button" data-bs-target="#features" data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button className="carousel-control-next position-static bg-dark mx-2 rounded-circle p-2 " style={{width:'fit-content'}} type="button" data-bs-target="#features" data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                        <div className="d-flex w-100 rounded-pill mt-3">
+                            <button className="carousel-control-prev position-static bg-dark mx-2 rounded-circle p-2 " style={{width:'fit-content'}} type="button" data-bs-target="#features" data-bs-slide="prev">
+                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Previous</span>
+                            </button>
+                            <button className="carousel-control-next position-static bg-dark mx-2 rounded-circle p-2 " style={{width:'fit-content'}} type="button" data-bs-target="#features" data-bs-slide="next">
+                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Next</span>
+                            </button>
+                        </div>
                 </div>
                 {/* Newspaper */}
                 <p className="text-black fs-3 fw-bold ps-1 mb-4 mt-5 pb-0" style={{ borderLeft: "0.3rem solid #ff6633" }}>Newspaper Mentions</p>
-                <div id="newspaper" className="carousel slide w-100 p-4 shadow-sm rounded-3 mb-5" style={{ backgroundColor: '#e7e7e7' }} data-bs-ride="carousel">
-                    <div className="carousel-inner">
-                        {newsSlides.map((slideImages, slideIndex) => (
-                            <div className={`carousel-item ${slideIndex === 0 ? 'active' : ''}`} key={slideIndex}>
-                                <div className="row">
-                                    {slideImages.map((vImage, key) => (
-                                        <div className="col-12 col-md-4" key={key}>
-                                            <img
-                                                src={`/publicAssets/achievements/${vImage}`}
-                                                className="d-block w-100 rounded-3"
-                                                alt={`Vogue Image ${slideIndex * 3 + key + 1}`}
-                                                // style={{ maxHeight: '300px', objectFit: 'cover' }}
-                                            />
-                                        </div>
-                                    ))}
+                <div className="p-4 shadow-sm rounded-3 mb-5" style={{ backgroundColor: '#e7e7e7' }}>
+                    <div id="newspaper" className="carousel slide w-100 " data-bs-ride="carousel">
+                        <div className="carousel-inner">
+                            {newsSlides.map((slideImages, slideIndex) => (
+                                <div className={`carousel-item ${slideIndex === 0 ? 'active' : ''}`} key={slideIndex}>
+                                    <div className="row">
+                                        {slideImages.map((vImage, key) => (
+                                            <div className="col-12 col-md-4" key={key}>
+                                                <img
+                                                    src={`/publicAssets/achievements/${vImage}`}
+                                                    className="d-block w-100 rounded-3"
+                                                    alt={`Vogue Image ${slideIndex * 3 + key + 1}`}
+                                                    // style={{ maxHeight: '300px', objectFit: 'cover' }}
+                                                />
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                     <div className="d-flex rounded-pill mt-3">
                         <button className="carousel-control-prev position-static bg-dark mx-2 rounded-circle p-2 " style={{width:'fit-content'}} type="button" data-bs-target="#newspaper" data-bs-slide="prev">
@@ -104,24 +108,27 @@ function AchievementsPage() {
                 </div>
                 {/* Others */}
                 <p className="text-black fs-3 fw-bold ps-1 mb-4 pb-0" style={{ borderLeft: "0.3rem solid #ff6633" }}>Awards & Recognition</p>
-                <div id="awards" className="carousel slide w-100 p-4 shadow-sm rounded-3" style={{ backgroundColor: '#e7e7e7' }} data-bs-ride="carousel">
-                    <div className="carousel-inner">
-                        {awardSlides.map((slideImages, slideIndex) => (
-                            <div className={`carousel-item ${slideIndex === 0 ? 'active' : ''}`} key={slideIndex}>
-                                <div className="row">
-                                    {slideImages.map((vImage, key) => (
-                                        <div className="col-12 col-md-4" key={key}>
-                                            <img
-                                                src={`/publicAssets/achievements/${vImage}`}
-                                                className="d-block w-100 rounded-3"
-                                                alt={`Vogue Image ${slideIndex * 3 + key + 1}`}
-                                                // style={{ maxHeight: '300px', objectFit: 'cover' }}
-                                            />
-                                        </div>
-                                    ))}
+                <div className=" p-4 shadow-sm rounded-3 mb-5" style={{ backgroundColor: '#e7e7e7' }}>
+
+                    <div id="awards" className="carousel slide w-100"  data-bs-ride="carousel">
+                        <div className="carousel-inner">
+                            {awardSlides.map((slideImages, slideIndex) => (
+                                <div className={`carousel-item ${slideIndex === 0 ? 'active' : ''}`} key={slideIndex}>
+                                    <div className="row">
+                                        {slideImages.map((vImage, key) => (
+                                            <div className="col-12 col-md-4" key={key}>
+                                                <img
+                                                    src={`/publicAssets/achievements/${vImage}`}
+                                                    className="d-block w-100 rounded-3"
+                                                    alt={`Vogue Image ${slideIndex * 3 + key + 1}`}
+                                                    // style={{ maxHeight: '300px', objectFit: 'cover' }}
+                                                />
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                     <div className="d-flex rounded-pill mt-3">
                         <button className="carousel-control-prev position-static bg-dark mx-2 rounded-circle p-2 " style={{width:'fit-content'}} type="button" data-bs-target="#awards" data-bs-slide="prev">
