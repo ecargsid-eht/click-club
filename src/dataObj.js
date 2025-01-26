@@ -20,7 +20,7 @@ export const events = [{
 }, {
     id: 3,
     title: 'Advanced Photography Workshop',
-    image: '/src/assets/advancedWorkshop2025.jpeg',
+    image: '/publicAssets/events/advancedWorkshop2025.jpeg',
     description: '',
     brief: 'The largest annual photography exhibition of NIT Raipur.',
     venue: 'Architecture Building Hall, NIT Raipur.',

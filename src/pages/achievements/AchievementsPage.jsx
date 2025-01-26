@@ -33,7 +33,7 @@ function AchievementsPage() {
     const newsSlides = chunkArray(news, chunkSize);
     return (
         <div className="container mb-2 mt-4">
-            <p className="display-5 fw-bold text-center mb-1 text-black">Achievements</p>
+            <p className="display-6 fw-bold text-center mb-1 text-black">Achievements</p>
             <p className="text-secondary text-center fw-light">
                 Let us celebrate the journey of <span style={{ color: "#ff6633" }}>Click Club</span>, marked by features and newspaper mentions that highlight its achievements and growth.
             </p>
@@ -61,16 +61,16 @@ function AchievementsPage() {
                             ))}
                         </div>
                     </div>
-                        <div className="d-flex w-100 rounded-pill mt-3">
-                            <button className="carousel-control-prev position-static bg-dark mx-2 rounded-circle p-2 " style={{width:'fit-content'}} type="button" data-bs-target="#features" data-bs-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Previous</span>
-                            </button>
-                            <button className="carousel-control-next position-static bg-dark mx-2 rounded-circle p-2 " style={{width:'fit-content'}} type="button" data-bs-target="#features" data-bs-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Next</span>
-                            </button>
-                        </div>
+                    <div className="d-flex w-100 rounded-pill mt-3">
+                        <button className="carousel-control-prev position-static bg-dark mx-2 rounded-circle p-2 " style={{width:'fit-content'}} type="button" data-bs-target="#features" data-bs-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Previous</span>
+                        </button>
+                        <button className="carousel-control-next position-static bg-dark mx-2 rounded-circle p-2 " style={{width:'fit-content'}} type="button" data-bs-target="#features" data-bs-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
                 {/* Newspaper */}
                 <p className="text-black fs-3 fw-bold ps-1 mb-4 mt-5 pb-0" style={{ borderLeft: "0.3rem solid #ff6633" }}>Newspaper Mentions</p>
@@ -109,7 +109,6 @@ function AchievementsPage() {
                 {/* Others */}
                 <p className="text-black fs-3 fw-bold ps-1 mb-4 pb-0" style={{ borderLeft: "0.3rem solid #ff6633" }}>Awards & Recognition</p>
                 <div className=" p-4 shadow-sm rounded-3 mb-5" style={{ backgroundColor: '#e7e7e7' }}>
-
                     <div id="awards" className="carousel slide w-100"  data-bs-ride="carousel">
                         <div className="carousel-inner">
                             {awardSlides.map((slideImages, slideIndex) => (
