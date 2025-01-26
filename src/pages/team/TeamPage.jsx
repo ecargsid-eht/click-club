@@ -1,4 +1,9 @@
+import { useLayoutEffect } from "react"
+
 function TeamPage() {
+      useLayoutEffect(() => {
+        document.title = "Team | Click Club"
+      },[])
     return (
         <div className="container mb-2 mt-4">
             <p className="text-center display-5 fw-bold text-black mb-1">Our Team</p>

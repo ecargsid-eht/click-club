@@ -1,6 +1,10 @@
 import './css/CampusPage.css';
 import bannerImage from '../../assets/campusBanner.png'
+import { useLayoutEffect } from 'react';
 function CampusPage() {
+  useLayoutEffect(() => {
+    document.title = "Campus | Click Club"
+  },[])
   return (
     <div className="text-center position-relative">
       <img src={bannerImage} className="campusBanner col-12" alt="" />

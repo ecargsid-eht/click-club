@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 const awards = ['award1.jpg', 'award2.JPG'];
 const news = ['news1.jpg', 'news2.jpg', 'news3.png', 'news4.jpg', 'news5.jpg', 'news6.jpeg'];
 const vogue = ['vogue1.jpg', 'vogue5.JPG', 'vogue15.jpg', 'vogue2.JPG', 'vogue13.jpg', 'yourlens1.PNG', 'vogue3.PNG', 'vogue4.JPG', 'vogue6.jpg', 'vogue7.jpg', 'vogue8.png', 'vogue9.jpg', 'vogue10.png', 'vogue11.png', 'vogue12.png', 'vogue14.png'];
 
 function AchievementsPage() {
+      useLayoutEffect(() => {
+        document.title = "Achievements | Click Club"
+      },[])
     const [chunkSize, setChunkSize] = useState(3); // Default chunk size for larger screens
 
     useEffect(() => {
@@ -42,7 +45,7 @@ function AchievementsPage() {
                 <p className="text-black fs-3 fw-bold ps-1 mb-4 pb-0" style={{ borderLeft: "0.3rem solid #ff6633" }}>Featured Photographs</p>
                 <div className="shadow-sm rounded-3 mb-5 p-4" style={{ backgroundColor: '#e7e7e7' }}>
                     <div id="features" className="carousel slide w-100 " data-bs-ride="carousel">
-                        <div className="carousel-inner">
+                        <div className="carousel-inner" >
                             {vogueSlides.map((slideImages, slideIndex) => (
                                 <div className={`carousel-item ${slideIndex === 0 ? 'active' : ''}`} key={slideIndex}>
                                     <div className="row">

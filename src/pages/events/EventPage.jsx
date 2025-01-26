@@ -2,9 +2,12 @@ import { events } from "../../dataObj"
 import './css/EventPage.css'
 import Venue from '../../assets/venue.svg?react'
 import DateTime from '../../assets/dateTime.svg?react'
-import { useState } from "react"
+import { useLayoutEffect, useState } from "react"
 import EventDetails from "./EventDetails"
 function EventPage() {
+      useLayoutEffect(() => {
+        document.title = "Events | Click Club"
+      },[])
     const [selectedEvent, setSelectedEvent] = useState(null);
 
     return (

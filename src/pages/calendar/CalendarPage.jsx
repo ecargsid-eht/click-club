@@ -1,4 +1,9 @@
+import { useLayoutEffect } from "react";
+
 function CalendarPage() {
+      useLayoutEffect(() => {
+        document.title = "Calendar | Click Club"
+      },[])
     const months = ['january.png', 'february.png', 'march.png', 'april.png','may.png', 'june.png', 'july.png', 'august.png', 'september.png', 'october.png', 'november.png', 'december.png'];
     return (
         <div className="container mb-2 mt-4">

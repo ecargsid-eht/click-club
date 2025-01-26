@@ -1,4 +1,9 @@
+import { useLayoutEffect } from "react";
+
 function ContactPage() {
+    useLayoutEffect(() => {
+      document.title = "Contact | Click Club"
+    },[])
   return (
     <>
       <div
