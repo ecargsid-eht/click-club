@@ -15,7 +15,7 @@ function CampusPage() {
     <>
       <div className="text-center position-relative">
         <img
-          src={"/publicAssets/campusBanner.png"}
+          src={"/publicAssets/campusBanner.webp"}
           className="campusBanner col-lg-12 "
           alt=""
         />

@@ -10,7 +10,7 @@ function DirectorsDesk() {
                   </p>
               </div>
               <div className="col-md-4">
-                  <img src="/publicAssets/campus/director.jpg" alt="" className="img-fluid rounded-4 float-end" />
+                  <img src="/publicAssets/campus/director.webp" alt="" className="img-fluid rounded-4 float-end" />
               </div>
           </motion.div>
       </>

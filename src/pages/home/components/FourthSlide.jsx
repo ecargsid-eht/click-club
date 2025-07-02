@@ -12,7 +12,7 @@ function FourthSlide() {
                     <div className="col-lg-3 d-flex align-items-stretch">
                         <div className="card mb-3 p-0 w-80">
                             <div className="card-img-top">
-                                <img src="https://clickclub.nitrr.ac.in/media/GOPASANYAL21.jpg" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
+                                <img src="/publicAssets/slideAssets/GOPASANYAL21.webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
                             </div>
                             <div className="card-body p-1">
                                 <p className="fs-4 text-dark">Aura</p>
@@ -23,7 +23,7 @@ function FourthSlide() {
                     <div className="col-lg-3 d-flex align-items-stretch d-flex align-items-stretch">
                         <div className="card mb-3 p-0 w-80">
                             <div className="card-img-top">
-                                <img src="https://clickclub.nitrr.ac.in/media/w3.jpg" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
+                                <img src="/publicAssets/slideAssets/w3.webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
                             </div>
                             <div className="card-body p-1">
                                 <p className="fs-4 text-dark">Pixel Lane</p>
@@ -34,7 +34,7 @@ function FourthSlide() {
                     <div className="col-lg-3 d-flex align-items-stretch">
                         <div className="card mb-3 p-0 w-80">
                             <div className="card-img-top">
-                                <img src="https://clickclub.nitrr.ac.in/media/VITTHAL%20SHUKLA%20(18).jpg" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
+                                <img src="/publicAssets/slideAssets/VITTHAL SHUKLA (18).webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
                             </div>
                             <div className="card-body p-1">
                                 <p className="fs-4 text-dark">Workshops</p>
@@ -45,7 +45,7 @@ function FourthSlide() {
                     <div className="col-lg-3 d-flex align-items-stretch">
                         <div className="card mb-3 p-0 w-80">
                             <div className="card-img-top">
-                                <img src="https://clickclub.nitrr.ac.in/media/IMG_8411.jpg" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
+                                <img src="/publicAssets/slideAssets/IMG_8411.webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
                             </div>
                             <div className="card-body p-1">
                                 <p className="fs-4 text-dark">Event Capture</p>
@@ -56,7 +56,7 @@ function FourthSlide() {
                     <div className="col-lg-3 d-flex align-items-stretch">
                         <div className="card mb-3 p-0 w-80">
                             <div className="card-img-top">
-                                <img src="https://clickclub.nitrr.ac.in/media/Himanshu%204.jpg" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
+                                <img src="/publicAssets/slideAssets/Himanshu 4.webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
                             </div>
                             <div className="card-body p-1">
                                 <p className="fs-4 text-dark">Aftermovie</p>
@@ -67,7 +67,7 @@ function FourthSlide() {
                     <div className="col-lg-3 d-flex align-items-stretch">
                         <div className="card mb-3 p-0 w-80">
                             <div className="card-img-top">
-                                <img src="https://clickclub.nitrr.ac.in/media/ANITESH%20KUMAR%20(3).jpg" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
+                                <img src="/publicAssets/slideAssets/ANITESH KUMAR (3).webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
                             </div>
                             <div className="card-body p-1">
                                 <p className="fs-4 text-dark">POTW</p>
@@ -78,7 +78,7 @@ function FourthSlide() {
                     <div className="col-lg-3 d-flex align-items-stretch">
                         <div className="card mb-3 p-0 w-80">
                             <div className="card-img-top">
-                                <img src="https://clickclub.nitrr.ac.in/media/Himanshu%202.jpg" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
+                                <img src="/publicAssets/slideAssets/Himanshu 2.webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
                             </div>
                             <div className="card-body p-1">
                                 <p className="fs-4 text-dark">Competitions</p>
@@ -89,7 +89,7 @@ function FourthSlide() {
                     <div className="col-lg-3 d-flex align-items-stretch">
                         <div className="card mb-3 p-0 w-80">
                             <div className="card-img-top">
-                                <img src="https://clickclub.nitrr.ac.in/media/Utkarsh%20jha%20sir%203.jpg" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
+                                <img src="/publicAssets/slideAssets/Utkarsh jha sir 3.webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
                             </div>
                             <div className="card-body p-1">
                                 <p className="fs-4 text-dark">Photowalk</p>

@@ -11,7 +11,7 @@ function FifthSlide() {
                     <div className="col-lg-3 d-flex align-items-stretch">
                         <div className="card border-0 bg-transparent mb-3 p-0 w-80">
                             <div className="card-img-top">
-                                <img src="https://clickclub.nitrr.ac.in/media/album/Recuitment%202023.jpg" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
+                                <img src="/publicAssets/slideAssets/Recruitment 2023.webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
                             </div>
                             <div className="card-body p-1">
                                 <p className="fs-4 ">Recruitment&#39;23</p>
@@ -22,7 +22,7 @@ function FifthSlide() {
                     <div className="col-lg-3 d-flex align-items-stretch d-flex align-items-stretch">
                         <div className="card border-0 bg-transparent mb-3 p-0 w-80">
                             <div className="card-img-top">
-                                <img src="https://clickclub.nitrr.ac.in/media/album/Shruti'22.jpeg" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
+                                <img src="/publicAssets/slideAssets/Shruti'22.webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
                             </div>
                             <div className="card-body p-1">
                                 <p className="fs-4 ">Shruti&#39;22</p>
@@ -33,7 +33,7 @@ function FifthSlide() {
                     <div className="col-lg-3 d-flex align-items-stretch">
                         <div className="card border-0 bg-transparent mb-3 p-0 w-80">
                             <div className="card-img-top">
-                                <img src="https://clickclub.nitrr.ac.in/media/KRI_9482.jpg" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
+                                <img src="/publicAssets/slideAssets/KRI_9482.webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
                             </div>
                             <div className="card-body p-1">
                                 <p className="fs-4 ">Traditional Day</p>
@@ -44,7 +44,7 @@ function FifthSlide() {
                     <div className="col-lg-3 d-flex align-items-stretch">
                         <div className="card border-0 bg-transparent mb-3 p-0 w-80">
                             <div className="card-img-top">
-                                <img src="https://clickclub.nitrr.ac.in/media/Garba-Eve-44.webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
+                                <img src="/publicAssets/slideAssets/Garba-Eve-44.webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" />
                             </div>
                             <div className="card-body p-1">
                                 <p className="fs-4 ">Garba Eve</p>

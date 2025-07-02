@@ -13,7 +13,7 @@ function AboutNIT() {
                 </p>
             </div>
             <div className="col-md-6">
-                <img src="/publicAssets/campus/campus.png" alt="" className="img-fluid rounded-4" style={{aspectRatio:'4/3'}} />
+                <img src="/publicAssets/campus/campus.webp" alt="" className="img-fluid rounded-4" style={{aspectRatio:'4/3'}} />
             </div>
         </motion.div>
     </>

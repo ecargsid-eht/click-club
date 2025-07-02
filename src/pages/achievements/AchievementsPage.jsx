@@ -1,8 +1,8 @@
 import { useEffect, useLayoutEffect, useState } from "react";
 import './css/AchievementsPage.css'
-const awards = ['award1.jpg', 'award2.JPG'];
-const news = ['news1.jpg', 'news2.jpg', 'news3.png', 'news4.jpg', 'news5.jpg', 'news6.jpeg'];
-const vogue = ['vogue1.jpg', 'vogue5.JPG', 'vogue15.jpg', 'vogue2.JPG', 'vogue13.jpg', 'yourlens1.PNG', 'vogue3.PNG', 'vogue4.JPG', 'vogue6.jpg', 'vogue7.jpg', 'vogue8.png', 'vogue9.jpg', 'vogue10.png', 'vogue11.png', 'vogue12.png', 'vogue14.png'];
+const awards = ['award1.webp', 'award2.webp'];
+const news = ['news1.webp', 'news2.webp', 'news3.webp', 'news4.webp', 'news5.webp', 'news6.webp'];
+const vogue = ['vogue1.webp', 'vogue5.webp', 'vogue15.webp', 'vogue2.webp', 'vogue13.webp', 'yourlens1.webp', 'vogue3.webp', 'vogue4.webp', 'vogue6.webp', 'vogue7.webp', 'vogue8.webp', 'vogue9.webp', 'vogue10.webp', 'vogue11.webp', 'vogue12.webp', 'vogue14.webp'];
 
 
 function AchievementsPage() {

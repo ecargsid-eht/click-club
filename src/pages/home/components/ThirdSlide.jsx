@@ -20,28 +20,28 @@ function ThirdSlide() {
                     <div className="col-lg-3">
                         <div className="card mb-3 p-0 w-80">
                             <div className="card-img">
-                                <img onClick={() => openModal("https://clickclub.nitrr.ac.in/media/ADITYA%20RAJ1.jpg")} data-bs-toggle="modal" data-bs-target="#imageModal" src="https://clickclub.nitrr.ac.in/media/ADITYA%20RAJ1.jpg" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" style={{ cursor: "pointer" }} />
+                                <img onClick={() => openModal("/publicAssets/slideAssets/ADITYA RAJ1.webp")} data-bs-toggle="modal" data-bs-target="#imageModal" src="/publicAssets/slideAssets/ADITYA RAJ1.webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" style={{ cursor: "pointer" }} />
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3">
                         <div className="card mb-3 p-0 w-80">
                             <div className="card-img">
-                                <img onClick={() => openModal("https://clickclub.nitrr.ac.in/media/ANITESH%20KUMAR%20(2).jpg")} data-bs-toggle="modal" data-bs-target="#imageModal" src="https://clickclub.nitrr.ac.in/media/ANITESH%20KUMAR%20(2).jpg" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" style={{ cursor: "pointer" }} />
+                                <img onClick={() => openModal("/publicAssets/slideAssets/ANITESH KUMAR (2).webp")} data-bs-toggle="modal" data-bs-target="#imageModal" src="/publicAssets/slideAssets/ANITESH KUMAR (2).webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" style={{ cursor: "pointer" }} />
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3">
                         <div className="card mb-3 p-0 w-80">
                             <div className="card-img">
-                                <img onClick={() => openModal("https://clickclub.nitrr.ac.in/media/HARSH%204.jpg")} data-bs-toggle="modal" data-bs-target="#imageModal" src="https://clickclub.nitrr.ac.in/media/HARSH%204.jpg" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" style={{ cursor: "pointer" }} />
+                                <img onClick={() => openModal("/publicAssets/slideAssets/HARSH 4.webp")} data-bs-toggle="modal" data-bs-target="#imageModal" src="/publicAssets/slideAssets/HARSH 4.webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" style={{ cursor: "pointer" }} />
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3">
                         <div className="card mb-3 p-0 w-80">
                             <div className="card-img">
-                                <img onClick={() => openModal("https://clickclub.nitrr.ac.in/media/VITTHAL%20SHUKLA%20(18).jpg")} data-bs-toggle="modal" data-bs-target="#imageModal" src="https://clickclub.nitrr.ac.in/media/VITTHAL%20SHUKLA%20(18).jpg" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" style={{ cursor: "pointer" }} />
+                                <img onClick={() => openModal("/publicAssets/slideAssets/VITTHAL SHUKLA (18).webp")} data-bs-toggle="modal" data-bs-target="#imageModal" src="/publicAssets/slideAssets/VITTHAL SHUKLA (18).webp" className="img-fluid mb-sm-2 mb-lg-0 rounded-2" alt="" style={{ cursor: "pointer" }} />
                             </div>
                         </div>
                     </div>

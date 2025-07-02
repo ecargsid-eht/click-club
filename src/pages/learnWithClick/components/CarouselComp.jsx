@@ -12,7 +12,7 @@ function CarouselComp() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={"/publicAssets/learnCarousel/juxtaposition.jpg"} className=' d-block  mx-auto opacity-50' style={{ width: '80%' }} alt="" />
+                        <img src={"/publicAssets/learnCarousel/juxtaposition.webp"} className=' d-block  mx-auto opacity-50' style={{ width: '80%' }} alt="" />
                         <div className="position-absolute top-50 start-50 translate-middle">
                             <p className="text-white text-center mb-2 fs-4 fw-semibold" >Sports</p>
                             <p className="text-white fs-1 fw-light text-center mb-2">Juxtaposition</p>
@@ -24,7 +24,7 @@ function CarouselComp() {
                         </div>
                     </div>
                     <div className="carousel-item ">
-                        <img src={"/publicAssets/learnCarousel/reflectionAndSymmetry.jpg"} className=' d-block  mx-auto opacity-50' style={{ width: '80%' }} alt="" />
+                        <img src={"/publicAssets/learnCarousel/reflectionAndSymmetry.webp"} className=' d-block  mx-auto opacity-50' style={{ width: '80%' }} alt="" />
                         <div className="position-absolute top-50 start-50 translate-middle">
                             <p className="text-white text-center mb-2 fs-4 fw-semibold" >Architecture</p>
                             <p className="text-white fs-1 fw-light text-center lh-1 mb-2">Reflection and Symmetry</p>
@@ -37,7 +37,7 @@ function CarouselComp() {
                         </div>
                     </div>
                     <div className="carousel-item ">
-                        <img src={"/publicAssets/learnCarousel/frameInFrame.jpg"} className=' d-block  mx-auto opacity-50' style={{ width: '80%' }} alt="" />
+                        <img src={"/publicAssets/learnCarousel/frameInFrame.webp"} className=' d-block  mx-auto opacity-50' style={{ width: '80%' }} alt="" />
                         <div className="position-absolute top-50 start-50 translate-middle">
                             <p className="text-white text-center mb-2 fs-4 fw-semibold" >Architecture</p>
                             <p className="text-white fs-1 fw-light text-center lh-1 mb-2">Frame In Frame</p>
@@ -50,7 +50,7 @@ function CarouselComp() {
                         </div>
                     </div>
                     <div className="carousel-item ">
-                        <img src={"/publicAssets/learnCarousel/leavingSpace.jpg"} className=' d-block  mx-auto opacity-50' style={{ width: '80%' }} alt="" />
+                        <img src={"/publicAssets/learnCarousel/leavingSpace.webp"} className=' d-block  mx-auto opacity-50' style={{ width: '80%' }} alt="" />
                         <div className="position-absolute top-50 start-50 translate-middle">
                             <p className="text-white text-center mb-2 fs-4 fw-semibold" >Abstract</p>
                             <p className="text-white fs-1 fw-light text-center mb-2">Leaving Space</p>
@@ -65,7 +65,7 @@ function CarouselComp() {
                         </div>
                     </div>
                     <div className="carousel-item ">
-                        <img src={"/publicAssets/learnCarousel/ruleOfThirds.jpg"} className=' d-block mx-auto opacity-50' style={{ width: '80%' }} alt="" />
+                        <img src={"/publicAssets/learnCarousel/ruleOfThirds.webp"} className=' d-block mx-auto opacity-50' style={{ width: '80%' }} alt="" />
                         <div className="position-absolute top-50 start-50 translate-middle">
                             <p className="text-white text-center mb-2 fs-4 fw-semibold" >Wildlife</p>
                             <p className="text-white fs-1 fw-light text-center mb-2">Rule of Thirds</p>

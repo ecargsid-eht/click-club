@@ -14,7 +14,7 @@ function TeamPage() {
             <div className="row mx-auto w-75 mt-5 g-3">
                 <div className="col-md-4">
                     <div className="card shadow-sm rounded-4 border border-secondary-subtle">
-                        <img className="card-img-top img-fluid rounded-top-4" style={{aspectRatio:'3/3'}} src="/publicAssets/team/ankur_sir.jpg" />
+                        <img className="card-img-top img-fluid rounded-top-4" style={{aspectRatio:'3/3'}} src="/publicAssets/team/ankur_sir.webp" />
                         <div className="card-body">
                             <p className="fs-4 fw-semibold text-black mb-1">Dr. Ankur Gupta</p>
                             <p className="text-secondary mb-1 fw-light fs-5">Professor, Dept. of Mechanical Engineering</p>
@@ -32,7 +32,7 @@ function TeamPage() {
                 </div>
                 <div className="col-md-4">
                     <div className="card shadow-sm rounded-4 border border-secondary-subtle">
-                        <img className="card-img-top img-fluid rounded-top-4" style={{aspectRatio:'3/3'}} src="/publicAssets/team/poptani_sir.jpg" />
+                        <img className="card-img-top img-fluid rounded-top-4" style={{aspectRatio:'3/3'}} src="/publicAssets/team/poptani_sir.webp" />
                         <div className="card-body">
                             <p className="fs-4 fw-semibold text-black mb-1">Dr. Himanshu Poptani</p>
                             <p className="text-secondary mb-1 fw-light fs-5">Professor, Dept. of Architecture & Planning</p>
@@ -43,7 +43,7 @@ function TeamPage() {
             {teamsArr.map((team,key) => (
                 <React.Fragment key={key}>
                     <div style={{height:'4vh'}}></div>
-                    <img src={`/publicAssets/team/${team}.jpg`} alt="" className="img-fluid rounded-3 mx-auto w-100 shadow" />
+                    <img src={`/publicAssets/team/${team}.webp`} alt="" className="img-fluid rounded-3 mx-auto w-100 shadow" />
                 </React.Fragment>
             ))}
             <div style={{height:'4vh'}}></div>
