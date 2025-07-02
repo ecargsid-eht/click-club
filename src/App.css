@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
     font-family: "Poppins" !important;
 }
 
-.active {
+ .active {
     color: #ff6633 !important;
 }
 
@@ -47,6 +47,21 @@ body::-webkit-scrollbar {
     text-decoration: underline 3px solid #ff6633 !important;
 }
 
+.btn-main{
+    background-color: #ff6633;
+}
+.charming-btn {
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+.btn-main:active{
+    outline: none !important;
+}
+
+.btn-main:hover {
+    background-color: #ff6633 !important;
+    color: white !important;
+}
 
 /* App.css */
 

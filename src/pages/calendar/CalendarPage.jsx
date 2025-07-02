@@ -8,7 +8,7 @@ function CalendarPage() {
     return (
         <div className="container mb-2 mt-4">
             <p className="text-center display-6 text-black fw-bold">Calendar / Planner</p>
-            <p className="text-secondary text-center fw-light">
+            <div className="text-secondary text-center fw-light">
                 <p className="text-secondary text-center fw-light">
                     Let us plan ahead while exploring stunning visuals for each month, complete with capture settings like ISO and more to inspire every moment.
                     <br />
@@ -22,7 +22,7 @@ function CalendarPage() {
                         </div>
                     ))}
                 </div>
-            </p>
+            </div>
         </div>
     )
 }

@@ -1,11 +1,19 @@
 import { useEffect, useState } from 'react'
-import logo from '../assets/clickLogo.webp'
 import {motion} from 'motion/react'
 import { useLocation, NavLink } from 'react-router';
 import endPoints from '../endPoints';
 function Navbar() {
   const [navInit, setNavInit] = useState(false);
   const location = useLocation()
+
+  useEffect(() => {
+    // Collapse the navbar when the route changes
+    const navbarToggler = document.querySelector(".navbar-collapse");
+    if (navbarToggler.classList.contains("show")) {
+      navbarToggler.classList.remove("show");
+    }
+  }, [location]);
+
   function handleScroll() {
     if (window.scrollY > 10) {
       setNavInit(true); // Make navbar opaque
@@ -27,8 +35,8 @@ function Navbar() {
     }}>
       <div className={`navbar navbar-expand-lg navbar-dark text-white fw-semibold px-lg-5 py-0  z-3 w-100 ${location.pathname !== '/' ? 'bg-dark' : 'position-fixed'} ${navInit ? 'navbarBlur shadow' : ''}`}>
         <div className="container-fluid">
-          <NavLink href="" className="navbar-brand">
-            <img src={logo} style={{ height: '4.5rem' }} alt="" />
+          <NavLink to={endPoints.home} className="navbar-brand">
+            <img src={"/publicAssets/clickLogo.webp"} style={{ height: '4.5rem' }} alt="" />
           </NavLink>
           <button className="navbar-toggler shadow-sm " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

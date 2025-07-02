@@ -1,18 +1,36 @@
 @media screen and (min-width: 768px) {
-    .carousel,.carousel-inner{
+
+    .carousel,
+    .carousel-inner {
         height: 80vh;
     }
 }
 
-.carousel-item>div>ul li::before{
+.carousel-item>div>ul li::before {
     content: '✓';
 }
 
-.learnWithClickHeading::after{
+.learnWithClickHeading::after {
     content: "";
     margin: auto;
     display: flex;
     justify-content: center;
     width: 5rem;
     height: 5px;
-    background: #FF6633;}
+    background: #FF6633;
+}
+
+
+.underline {
+    text-decoration-line: underline;
+    text-decoration-color: #FF6633;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 5px;
+}
+
+
+canvas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

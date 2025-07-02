@@ -1,7 +1,7 @@
 
-import { useLayoutEffect } from 'react'
-import CarouselComp from './components/CarouselComp'
-import PhotoEditor from './components/PhotoEditor'
+import { useLayoutEffect, lazy, Suspense } from 'react'
+const CarouselComp = lazy(() => import('./components/CarouselComp'))
+const PhotoEditor = lazy(() => import('./components/PhotoEditor'))
 import './css/LearnWithClickPage.css'
 
 function LearnWithClickPage() {
@@ -9,10 +9,10 @@ function LearnWithClickPage() {
         document.title = "Learn with Click | Click Club"
       },[])
     return (
-        <>
+      <Suspense fallback={<>...</>}>
             <CarouselComp />
             <PhotoEditor />
-        </>
+        </Suspense>
     )
 }
 

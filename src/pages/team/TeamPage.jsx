@@ -1,5 +1,6 @@
+import React from "react";
 import { useLayoutEffect } from "react"
-
+const teamsArr = ['mentors','heads1','heads2','heads3','cores1','cores2','exec1','exec2','interns'];
 function TeamPage() {
       useLayoutEffect(() => {
         document.title = "Team | Click Club"
@@ -39,6 +40,12 @@ function TeamPage() {
                     </div>
                 </div>
             </div>
+            {teamsArr.map((team,key) => (
+                <React.Fragment key={key}>
+                    <div style={{height:'4vh'}}></div>
+                    <img src={`/publicAssets/team/${team}.jpg`} alt="" className="img-fluid rounded-3 mx-auto w-100 shadow" />
+                </React.Fragment>
+            ))}
             <div style={{height:'4vh'}}></div>
             <div className="mt-3 mx-auto">
                 <p className="fs-3 fw-bold text-black ps-2" style={{borderLeft:"0.4rem solid #ff6633"}}>About our Guides</p>

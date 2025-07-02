@@ -1,0 +1,137 @@
+export const presetFilters= [
+    {
+        name: "Original",
+        adjustments: {
+            brightness: 100,
+            contrast: 100,
+            saturation: 100,
+            hue: 0,
+            sepia: 0,
+            grayscale: 0,
+            vignette: 0,
+            colorTemperature: 0,
+            vibrance: 100,
+            clarity: 0,
+            noise: 0,
+        },
+    },
+    {
+        name: "Vintage",
+        adjustments: {
+            brightness: 110,
+            contrast: 85,
+            saturation: 80,
+            sepia: 25,
+            vignette: 30,
+            colorTemperature: 15,
+            clarity: -10,
+            noise: 15,
+        },
+    },
+    {
+        name: "B&W Classic",
+        adjustments: {
+            grayscale: 100,
+            contrast: 120,
+            brightness: 105,
+            clarity: 15,
+            vignette: 20,
+        },
+    },
+    {
+        name: "Warm Sunset",
+        adjustments: {
+            colorTemperature: 40,
+            saturation: 120,
+            vibrance: 130,
+            brightness: 110,
+            vignette: 15,
+            clarity: 10,
+        },
+    },
+    {
+        name: "Cool Blue",
+        adjustments: {
+            colorTemperature: -30,
+            saturation: 110,
+            contrast: 115,
+            brightness: 95,
+            clarity: 20,
+        },
+    },
+    {
+        name: "High Contrast",
+        adjustments: {
+            contrast: 150,
+            brightness: 105,
+            saturation: 120,
+            clarity: 25,
+            vibrance: 120,
+        },
+    },
+    {
+        name: "Soft Portrait",
+        adjustments: {
+            brightness: 115,
+            contrast: 90,
+            saturation: 95,
+            colorTemperature: 10,
+            vignette: 25,
+            clarity: -20,
+        },
+    },
+    {
+        name: "Dramatic",
+        adjustments: {
+            contrast: 140,
+            brightness: 90,
+            saturation: 130,
+            vignette: 40,
+            clarity: 30,
+        },
+    },
+    {
+        name: "Film Noir",
+        adjustments: {
+            grayscale: 100,
+            contrast: 160,
+            brightness: 85,
+            vignette: 50,
+            clarity: 20,
+        },
+    },
+    {
+        name: "Golden Hour",
+        adjustments: {
+            colorTemperature: 35,
+            brightness: 115,
+            saturation: 110,
+            vibrance: 125,
+            vignette: 20,
+            clarity: 5,
+        },
+    },
+    {
+        name: "Moody Blue",
+        adjustments: {
+            colorTemperature: -40,
+            tint: -10,
+            contrast: 125,
+            saturation: 90,
+            vignette: 35,
+            clarity: 15,
+        },
+    },
+    {
+        name: "Retro Film",
+        adjustments: {
+            sepia: 40,
+            contrast: 110,
+            brightness: 105,
+            saturation: 85,
+            vignette: 25,
+            noise: 20,
+            clarity: -5,
+        },
+    },
+  ]

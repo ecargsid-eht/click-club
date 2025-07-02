@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router'
 import endPoints from './endPoints'
 import './App.css'
 import { lazy } from 'react'
+import Footer from './components/Footer';
 const TeamPage = lazy(() => import('./pages/team/TeamPage'));
 const LearnWithClickPage = lazy(() => import('./pages/learnWithClick/LearnWithClickPage'));
 const CampusPage = lazy(() => import('./pages/campus/CampusPage'))
@@ -17,16 +18,20 @@ function App() {
     <Router>
       <Navbar />
       <ProgressScroll/>
-      <Routes>
-        <Route path={endPoints.home} element={<HomePage/>} />
-        <Route path={endPoints.campus} element={<CampusPage/>} />
-        <Route path={endPoints.contact} element={<ContactPage/>} />
-        <Route path={endPoints.events} element={<EventPage/>} />
-        <Route path={endPoints.learnWithClick} element={<LearnWithClickPage/>} />
-        <Route path={endPoints.achievements} element={<AchievementsPage/>} />
-        <Route path={endPoints.calendar} element={<CalendarPage/>} />
-        <Route path={endPoints.team} element={<TeamPage/>} />
-      </Routes>
+      <div style={{minHeight:'100vh',position:'static'}}>
+        <Routes>
+          <Route path={endPoints.home} element={<HomePage/>} />
+          <Route path={endPoints.campus} element={<CampusPage/>} />
+          <Route path={endPoints.contact} element={<ContactPage/>} />
+          <Route path={endPoints.events} element={<EventPage/>} />
+          <Route path={endPoints.learnWithClick} element={<LearnWithClickPage/>} />
+          <Route path={endPoints.achievements} element={<AchievementsPage/>} />
+          <Route path={endPoints.calendar} element={<CalendarPage/>} />
+          <Route path={endPoints.team} element={<TeamPage/>} />
+        </Routes>
+      </div>
+
+      <Footer />
     </Router>
   )
 }
