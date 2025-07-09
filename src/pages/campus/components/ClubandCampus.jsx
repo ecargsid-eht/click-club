@@ -20,7 +20,8 @@ function ClubandCampus() {
           <iframe
             src="https://www.google.com/maps/embed?pb=!4v1665514026802!6m8!1m7!1sCAoSLEFGMVFpcE9saGp4VmVEdFc4bmFpVkV2b1NxUTBHM1BoUFgySzZfUjNOaGpS!2m2!1d21.24940459572849!2d81.60443614086726!3f35.79!4f8.310000000000002!5f0.4000000000000002"
             width="100%"
-            allowfullscreen=""
+            allowFullScreen=""
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             className="rounded-4"
             height={500}
             loading="lazy"
